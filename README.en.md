@@ -7,9 +7,9 @@ The main objective is to answer the business question: “How did marketing perf
 
 ## Project Structure 📁
 The project is organized into modular components for each phase of the data pipeline:
-- n8n_workflow.json: El archivo que contiene el flujo de trabajo completo de ingesta de datos, desde la descarga del archivo CSV hasta la carga en la base de datos de PostgreSQL.  
-- kpi_analysis.sql: El script SQL que realiza el análisis de los datos para calcular el CAC, el ROAS y las métricas de comparación.  
-- docs/: Carpeta que podría contener capturas de pantalla o diagramas del proyecto.  
+- n8n_workflow.json: The file containing the complete data ingestion workflow, from downloading the CSV file to loading it into the PostgreSQL database.  
+- kpi_analysis.sql: The SQL script that analyzes the data to calculate CAC, ROAS, and comparison metrics.  
+- docs/: Folder containing screenshots and diagrams of the project.  
 
 ## Technologies Used 🦾
 - n8n Cloud: For data ingestion and orchestration. It is the no-code orchestrator that manages the ETL (Extract, Transform, Load) workflow. 
@@ -18,7 +18,7 @@ The project is organized into modular components for each phase of the data pipe
 - Google Drive: As the external data source containing the ads_spend CSV file.
 
 ## Installation and Configuration ⚙️
-- Clonar el Repositorio (Bash):  
+- Clone the Repository (Bash):  
 git clone https://github.com/ADAA-404/AI-Data-Engineer-Challenge-.git   
 cd AI-Data-Engineer-Challenge-  
 
