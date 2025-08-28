@@ -35,10 +35,14 @@ Este proyecto requiere los archivos proporcionados y la consideracion de sus pro
 Asegúrate de que tu base de datos Supabase esté configurada y la tabla ads_spend_ingested exista.  
 En n8n Cloud, haz clic en Execute Workflow para ejecutar el pipeline de ingesta. Esto descargará el CSV, transformará los datos e insertará las filas en tu base de datos.  
 
+![Flujo de trabajo optimizado en n8n cloud](Images/N8N_workflow_test.png)
+
 - Análisis de KPIs:
 En el Editor de SQL de Supabase, abre el archivo kpi_analysis.sql.  
 Reemplaza la fecha de referencia en la consulta por la fecha final deseada de tu análisis.  
 Ejecuta la consulta para ver los resultados del CAC y el ROAS.
+
+![Extracto de la consulta realizada de SQL en SupaBase](Images/KPIs_Query_SQL.png)
 
 ## Demostración del Agente (Mapeo de Lenguaje Natural a SQL) 🤖
 "Compara el CAC y el ROAS de los últimos 30 días con respecto a los 30 días anteriores."  
@@ -50,7 +54,7 @@ El "Compara" se traduce al cálculo del delta (cambio porcentual).
 
 Resultado: Al ejecutar la consulta con el rango de fechas del proyecto, se obtiene la siguiente tabla que responde a la pregunta de negocio de manera precisa.  
 
-![Tablas obtenidas apartir de la consulta a SQL](Images/Streamlit_View_Ex1.png)
+![Tabla obtenida apartir de la consulta a SQL](Images/Table_result_SQL.png)
 
 ## Contribuciones 🖨️
 Si te interesa contribuir a este proyecto o usarlo independiente, considera:  
