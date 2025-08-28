@@ -7,7 +7,7 @@ El objetivo principal es responder a la pregunta de negocio: "¿Cómo cambió el
 El proyecto está organizado en componentes modulares para cada fase del pipeline de datos:   
 - n8n_workflow.json: El archivo que contiene el flujo de trabajo completo de ingesta de datos, desde la descarga del archivo CSV hasta la carga en la base de datos de PostgreSQL.  
 - kpi_analysis.sql: El script SQL que realiza el análisis de los datos para calcular el CAC, el ROAS y las métricas de comparación.  
-- docs/: Carpeta que podría contener capturas de pantalla o diagramas del proyecto.  
+- docs/: Carpeta que tiene capturas de pantalla y diagramas del proyecto.  
 
 ## Tecnologías Utilizadas 🦾
 - n8n Cloud: Para la ingesta y orquestación de datos. Es el orquestador sin código que gestiona el flujo de trabajo de ETL (Extraer, Transformar, Cargar).  
