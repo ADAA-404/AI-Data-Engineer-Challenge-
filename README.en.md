@@ -35,12 +35,16 @@ This project requires the files provided and consideration of your own credentia
 
 - Data Entry::
 Ensure that your Supabase database is configured and that the ads_spend_ingested table exists.    
-In n8n Cloud, click Execute Workflow to run the ingestion pipeline. This will download the CSV, transform the data, and insert the rows into your database.     
+In n8n Cloud, click Execute Workflow to run the ingestion pipeline. This will download the CSV, transform the data, and insert the rows into your database.
+
+![Optimized workflow in n8n cloud](Images/N8N_workflow_test.png)  
 
 - KPI analysis:
 In the Supabase SQL Editor, open the kpi_analysis.sql file.   
 Replace the reference date in the query with the desired end date of your analysis.   
 Run the query to see the CAC and ROAS results.  
+
+![Excerpt from the SQL query performed in SupaBase](Images/KPIs_Query_SQL.png)  
 
 ## Agent Demonstration (Natural Language to SQL Mapping) 🤖
 "Compare the CAC and ROAS for the last 30 days with respect to the previous 30 days."  
@@ -52,7 +56,7 @@ CAC and ROAS are metrics calculated based on spend and conversions.
 
 Result: When running the query with the project date range, the following table is obtained, which accurately answers the business question. 
 
-![Table obtained from SQL query](Images/Streamlit_View_Ex1.png)
+![Table obtained from SQL query](Images/Table_result_SQL.png)
 
 ## Contributions 🖨️
 If you're interested in contributing to this project or using it independently, consider:   
